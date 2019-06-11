@@ -1,0 +1,30 @@
+html {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+body, h1,h2,h3, ul,li,p {
+	margin: 0;
+	padding: 0;
+	font-family: 'microsoft yehei', Verdana, Arial;
+	color: #505050;
+}
+
+p, li, a {
+	font-size: 14px;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+a:link, a:visited, a:active {
+	color: #505050;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	/*color: #ff0000;*/
+	color: #f00;
+}

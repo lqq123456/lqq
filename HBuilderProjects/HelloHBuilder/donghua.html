@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 1500px;
+			}
+			.lb_div{
+				width: 4510px;
+				animation-name: lb;
+				animation-duration: 3s;
+				animation-iteration-count: 3;
+			}
+			.big_div{
+				width: 1500px;
+				overflow: hidden;
+			}
+			@keyframes lb{
+				0%{
+					margin-left: 0;
+				}
+				45%{
+					margin-left: -1500px;		
+				}
+				100%{
+					margin-left: -3000px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big_div">			
+			<div class="lb_div">
+				<img src="img/013.jpg" />
+				<img src="img/015.jpg" />
+				<img src="img/1.jpg" />
+			</div>
+		</div>
+	</body>
+</html>

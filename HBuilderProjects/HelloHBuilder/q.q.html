@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>QQhuiy</title>
+	</head>
+	<style type="text/css">
+	.ui-navbar{
+		min-width: 1000px;
+		width: 100%;
+		height: 90px;
+		position: relative;
+		z-index: 10;
+		background-color:#333333 ;
+	}	
+	.ui-navbar .ui-navbar-container {
+        width: 1000px;
+        white-space: nowrap;
+        width: 1230px;
+        height: 90px;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    .ui-navbar .ui-navbar-logo.index {
+        display: none;
+    }
+    .ui-navbar .ui-navbar-logo {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+    }
+    
+    
+    
+    
+    
+    .ui-navbar .ui-navbar-logo img {
+    	
+    width: 180px;
+    height: 90px;
+}
+fieldset, img {
+    border: 0;
+    height: 90px;
+}
+
+img {
+    width: 180p;
+    height: 90px;
+}
+fieldset, img {
+    border: 0;
+}
+
+
+
+
+
+
+a {
+    color: #d30000;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+    
+    .ui-navbar .ui-navbar-list {
+    margin-left: 10px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+.hide-clip {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+.ui-navbar .ui-navbar-list>ul {
+    height: 90px;
+    font-size: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.ui-navbar .ui-navbar-list>ul>li {
+    font-size: 0;
+    position: relative;
+    *z-index: 2;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    *vertical-align: top;
+}
+li {
+    list-style: none;
+}
+.ui-navbar .ui-navbar-list ul>li>a {
+    width: 84px;
+}
+.ui-navbar .ui-navbar-list>ul>li>a {
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+    color: orange;
+    text-decoration: none;
+}
+.ui-navbar .ui-navbar-list>ul>li ul {
+    width: 300px;
+    position: absolute;
+    z-index: 5;
+    display: none;
+    white-space: nowrap;
+}
+.ui-navbar .ui-navbar-list>ul>li ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 15px;
+}
+li {
+    list-style: none;
+}
+.ui-navbar .ui-navbar-list>ul>li ul li a {
+    color: #1c1c1c;
+    font-size: 14px;
+    text-decoration: none;
+}
+@media screen and (max-width: 1180px), screen and (max-height: 730px)
+.ui-navbar .ui-navbar-list ul>li>a {
+    width: 84px;
+}
+.ui-navbar .ui-navbar-status {
+    margin-left: 0;
+}
+.ui-navbar .ui-navbar-status {
+    height: 90px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    position: relative;
+    z-index: 10;
+}
+.ui-navbar .ui-navbar-status .ui-navbar-status-userinfo {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 0;
+    border-radius: 20px;
+    
+    vertical-align: top;
+    
+}
+.ui-navbar-status-login{
+	border-width: 100px;
+	
+	border: 3px solid yellow;
+	border-radius: 50px;
+	color: #fad65c;
+	margin: 20px 20px;
+	padding: left 20px;
+}
+.inner-text{
+	border: 3px solid yellow;
+	border-radius: 80px;
+	color: #fad65c;
+	margin: 98px -5px;
+	text-align: left;
+}
+.ui-navbar .ui-navbar-status .ui-navbar-status-login {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border-radius: 50px;
+	color: #fad65c;
+	margin: 20px 20px;
+    vertical-align: top;
+    color: #e8b600;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    width: 96px;
+    height: 40px;
+    background: url(/vipstyle/vipportal/v4/img/common/sprites_btn.png) -990px -240px;
+    margin-top: 25px;
+    background-position: -1100px -300px;
+}
+.ui-navbar .ui-navbar-status .ui-navbar-status-userinfo {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 0;
+    vertical-align: top;
+}
+.ui-navbar .ui-navbar-status .ui-btn-basic-s-flex {
+    color: #986b0d;
+    margin-top: 25px;
+}
+.ui-btn-basic-s-flex {
+    position: relative;
+    margin-right: 20px;
+    height: 40px;
+    color: #986b0d;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-position: -900px -480px;
+}
+.ui-btn {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background: url(/vipstyle/vipportal/v4/img/common/sprites_btn.png) no-repeat;
+}
+.ui-btn-basic-s-flex .inner-text {
+    padding-left: 20px;
+    border: 3px solid yellow;
+	border-radius: 80px;
+	color: #fad65c;
+	margin: 98px -5px;
+	text-align: left;
+}
+.ui-btn-basic-s-flex .right-radius {
+    position: absolute;
+    right: -19px;
+    top: 0;
+    height: 40px;
+    width: 20px;
+    background: url(/vipstyle/vipportal/v4/img/common/sprites_btn.png) -900px -580px;
+}
+@media screen and (max-width: 1180px), screen and (max-height: 730px)
+.ui-navbar .ui-navbar-container .ui-navbar-justifyfix {
+    display: none;
+}
+.ui-navbar .ui-navbar-justifyfix {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+@media screen and (max-width: 1180px), screen and (max-height: 730px)
+.ui-navbar .ui-navbar-subnav {
+    min-width: 1000px;
+}
+.ui-navbar .ui-navbar-subnav {
+    width: 100%;
+    min-width: 1180px;
+    height: 40px;
+    position: absolute;
+    background: url(/vipstyle/vipportal/v4/img/common/navbar_bg3.png) repeat;
+}
+
+
+	</style>
+	<body>
+		<header class="ui-navbar">
+    <div class="ui-navbar-container">
+        <a href="http://vip.qq.com/?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" class="case-logo index" title="QQ会员首页">
+					<!--<img src="img/logo_看图王.png" alt="QQ会员">
+                    	作者：offline
+                    	时间：2019-05-22
+                    	描述：
+                    -->	<img src="img/logo_b.png" alt="QQ会员">
+	    </a>
+        <nav class="ui-navbar-list">
+            <h2 class="hide-clip">网站导航</h2>
+                        <ul>
+                <li data-idx="1" class="">
+                    <a href="http://vip.qq.com/qq.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.qq.qqindex'});}catch(e){};">功能特权</a>
+                    <ul class="menu-1">
+                        <li class=""><a href="http://vip.qq.com/freedom/freedom_vipgrade.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.qq.freedom_all'});}catch(e){};">全部特权</a></li>
+                        <li class=""><a href="http://vip.qq.com/freedom/freedom_grade.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.qq.freedom_grade'});}catch(e){};">分等级特权</a></li>
+                    </ul>
+                </li>
+                <li data-idx="2" class="">
+                    <a href="http://vip.qq.com/game.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.game.gameindex'});}catch(e){};">游戏特权</a>
+                </li>
+                <li data-idx="3" class="">
+                    <a href="http://vip.qq.com/life.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.life.lifeindex'});}catch(e){};">生活特权</a>
+                </li>
+                <li data-idx="4" class="">
+                    <a href="http://vip.qq.com/zb/?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.zb.zbindex'});}catch(e){};">装扮特权</a>
+                </li>
+                <li data-idx="5" class="">
+                    <a href="http://vip.qq.com/act/index.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.act.actindex'});}catch(e){};">会员活动</a>
+                    <ul class="menu-5">
+                        <li class=""><a href="http://vip.qq.com/freedom_act/all1.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.act.act_all'});}catch(e){};">全部活动</a></li>
+                        <li><a href="http://haoma.qq.com/qq.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.qq.haoma'});}catch(e){};" target="_blank">靓号站</a></li>
+                    </ul>
+                </li>
+                <li data-idx="6" class="">
+                    <a href="http://vip.qq.com/my_freedom/level.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.freedom.freedomindex'});}catch(e){};">成长体系</a>
+                    <ul class="menu-6">
+                        <li class=""><a href="http://vip.qq.com/growtask/index?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.freedom.growtask'});}catch(e){};">任务中心</a></li>
+                        <li class=""><a href="http://vip.qq.com/jf/?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.freedom.jifen'});}catch(e){};">积分乐园</a></li>
+                        <li class=""><a href="http://vip.qq.com/rank/index.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.freedom.rank'});}catch(e){};">排名中心</a></li>
+                    </ul>
+                </li>
+                <li data-idx="7" class="">
+                    <a href="http://vip.qq.com/clubact/2013/yearGift/?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.year.yeargift'});}catch(e){};">年费专区</a>
+                </li>
+                <li data-idx="8" class="">
+                    <a href="http://vip.qq.com/kingcard.html?ADTAG=vip.qq.com%2Fmy%2Findex&amp;SNO=1558489165792" onclick="try{pgvSendClick({hottag: 'vipsite.nav.kingcard.index'});}catch(e){};">大王卡特权</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- 登录状态 -->
+        <div class="ui-navbar-status">
+            <div class="ui-navbar-status-userinfo " id="menu-user-panel">
+                                    <div class="ui-navbar-status-userinfo ">
+                        <span id="menu-login-btn" class="ui-navbar-status-login">登录</span>
+                    </div>
+                            </div>
+
+            <!-- 常驻按钮 -->
+            <div class="ui-btn ui-btn-basic-s-flex">
+                <span class="inner-text" id="menu-pay-btn" style="text-align: center;">开通超级会员</span>
+                <span class="right-radius"></span>
+            </div>
+
+        </div>
+        <!-- /登录状态 -->
+
+        <div class="ui-navbar-justifyfix"></div>
+    </div>
+
+    <div class="ui-navbar-subnav" style="display: none;">
+        <div class="ui-navbar-subnav-container">
+        </div>
+    </div>
+
+</header>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+.banner img {
+	width: 100%;
+	height: 452px;
+	vertical-align: top;
+}
+.banner .line {
+	height: 30px;
+	background-color: #696969;
+	opacity: 0.4;
+	margin-top: -30px;
+}
+.product {
+	width: 1140px;
+	margin: auto;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	overflow: hidden;
+}
+
+.product .title {
+	text-align: center;
+	background-image: url(../images/title_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.product .title img {
+	padding: 0 5px;
+}
+
+.product li {
+	width: 260px;
+	height: 282px;
+	text-align: center;
+	float: left;
+	margin: 10px;
+}
+.product li img {
+	width: 260px;
+	height: 197px;
+	margin-bottom: 10px;
+}
+.product li img:hover {
+	opacity: 0.8;
+}
+.ads-img {
+	text-align: center;
+	width: 100%;
+	
+	background-image: url(../images/ads.jpg);
+	background-repeat: no-repeat;
+	margin-bottom: 50px;
+    height: 293px;
+}
+.make {
+	width: 1140px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.make img {
+	width: 286px;
+	height: 177px;
+	float:left;
+	margin-right: 50px;
+
+}
+
+.make .refer p {
+	line-height: 2em;
+}
+
+.make .refer button {
+	width: 130px;
+	height: 34px;
+	border: none;
+	background-color: gray;
+	color: #fff;
+}
+.make .refer button:hover {
+	background-color: coral;
+	cursor: pointer;
+}
+.news {
+	width: 1140px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+.news .left {
+	float:left;
+}
+.news .left img {
+	width: 500px;
+	height: 315px;
+}
+.news .right {
+	overflow: hidden;
+}
+.news .right ul {
+	margin-left: 50px;
+}
+.news .right ul li {
+	height: 80px;
+    padding-top: 10px;
+	border-bottom: 1px solid #efefef;
+}
+.news .right li span {
+	float:left;
+	width: 60px;
+	height: 58px;
+	background-color: black;
+    margin: 0 40px 0px 20px;
+}
+.news .right li span * {
+	color: #fff;
+	text-align: center;
+}
+.news .right li a{
+	color: #333333;
+	font-size: 16px;
+}
+.news .right li a:hover{
+	color: #949449;
+}
+.outline{
+	color:#999999;
+	font-size: 12px;
+}

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body{
+           background: #f5f5f5;
+        }
+        .page-main {
+           /* background: #f5f5f5;*/
+            padding-top: 22px;
+
+        }
+        .household {
+            position: relative;
+        }
+
+        .hd-title {
+            font-size: 22px;
+            font-weight: 200;
+            line-height: 58px;
+            color: #333;
+        }
+        .hd-tab {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 16px 0 0;
+
+            font-size: 16px;
+        }
+        .hd-tab .hd-tab-list {
+            padding: 4px 0 0;
+            font-size: 16px;
+        }
+
+        .hd-tab .hd-tab-list li {
+            float: left;
+            margin-left: 30px;
+            color: #424242;
+            cursor: pointer;
+        }
+
+        .hd-tab .hd-tab-list li:hover {
+            color: #ff6700;
+            border-bottom: 2px solid #ff6700;
+        }
+
+        .hd-tab .hd-tab-list .tab-active {
+            color: #ff6700;
+            border-bottom: 2px solid #ff6700;
+        }
+
+        .house-bd .row4 {
+            float: left;
+        }
+
+        .house-bd .row4 ul {
+            height: 614px;
+        }
+
+        .house-bd .row4 ul .brick {
+            width: 234px;
+            margin-bottom: 14px;
+        }
+
+        .house-bd .item-right img {
+            display: block;
+           width: 273px;
+           height: 675px;
+        }
+
+        .row16 {
+            width: 978px;
+
+            float: left;
+            height: 614px;
+            margin-left: 12px;
+
+        }
+
+        .row16 .brick-item {
+            display: none;
+        }
+
+        .row16 .sel {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 14px;
+            grid-row-gap: 14px;
+        }
+
+        .row16 .brick-item .li {
+            padding: 34px 0 20px;
+            background: #fff;
+            position: relative;
+        }
+
+        .brick-item .li .figure {
+            text-align: center;
+        }
+
+        .row16 .brick-item .li .figure img {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 18px;
+        }
+
+        .brick-item .li .tit {
+            margin: 0 10px;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .brick-item .li .tit a {
+            color: #333;
+
+        }
+
+        .brick-item .li .pri {
+            margin-top: 25px;
+            text-align: center;
+            color: #ff6700;
+
+            font-size: 13px;
+        }
+
+        .brick-item .li .pri del {
+            color: #b0b0b0;
+        }
+
+        .brick-item .li .flag {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            width: 64px;
+            height: 20px;
+            margin-left: -32px;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+            background-color: #e53935;
+        }
+
+        .brick-item .li .review-wrap {
+            position: absolute;
+            display: none;
+        }
+
+        .brick-item .li .review-wrap .review {
+            margin-bottom: 5px;
+            color: #fff;
+
+            font-size: 12px;
+            background: #ff6700;
+
+        }
+        li{
+        	list-style: none;
+        }
+        a{
+        	text-decoration: none;
+        }
+        .radius_span{
+                 	background-color: #888888;
+                 	height: 20px;
+                 	width: 20px;
+                 	display: inline-block;	
+                 	vertical-align: bottom;
+                 	border-radius: 50%;
+                 	
+                 }
+                 .radius_span:after{
+                 	content: "";
+                 	border: 2px solid #FFFFFF;
+                 	width: 10px;
+                 	height: 10px;
+                 	display: block;
+                 	border-left: 0px;
+                 	border-bottom: 0px;
+                 	transform: rotate(45deg);
+                 	margin-top: 4px;
+                 	margin-right: 3.5px;
+                 }
+                 
+
+    </style>
+</head>
+
+<body>
+    <div class='page-main'>
+        <div class='container box'>
+            <div class='household'>
+                <div class='house-hd'>
+                    <h2 class='hd-title'>手机</h2>
+                    <div class="hd-tab">
+                        <a class="more-link" href="https://www.mi.com/p/1915.html" target="_blank" data-stat-id="34ca2aa6a92adae8" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-34ca2aa6a92adae8', 'https://www.mi.com/p/1915.html', 'pcpid', '']);">查看全部
+                	<span class="radius_span"></span></a>
+                    </div>
+                </div>
+                <div class='house-bd'>
+                    <div class="row4">
+                        <ul>
+                            <li class='brick'>
+                                <a href="#" class='item-right'>
+                                    <img src="img/xmad_15589606696364_lPMvT.jpg" alt="">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class='row16' id='row16'>
+                        <ul class="brick-item sel">
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a  class="at"   href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brick-item ">
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brick-item ">
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brick-item ">
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                             <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="img/22.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                   <a href="//item.mi.com/1190800033.html" data-stat-aid="AA21489" data-stat-pid="2_58_1_333" data-log_code="31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963" target="_blank" data-stat-id="AA21489+2_58_1_333" onclick="_msq.push(['trackEvent', '81190ccc4d52f577-AA21489+2_58_1_333', '//item.mi.com/1190800033.html', 'pcpid', '31pchomephone_right_0001019#t=normal&amp;act=other&amp;page=home&amp;bid=3185161.1&amp;pid=2190800009&amp;adm=5963']);">小米9 6GB+128GB</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>2999元</span>
+                                  <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>  
+                                </div>
+                                <div class="flag">新品</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      var hdTab=document.getElementById('hd-tab').getElementsByTagName('li');
+      console.log(hdTab);
+      var hdList=document.getElementById('row16').getElementsByTagName('ul');
+      console.log(hdList);
+      for(var i=0;i<hdTab.length;i++){
+        hdTab[i].addEventListener('mouseover',function(){
+         for(var i=0;i<hdTab.length;i++){
+             if(hdTab[i]===this){
+                hdTab[i].className='tab-active';
+                hdList[i].className='brick-item sel';
+             }
+             else{
+                hdTab[i].className='';
+                hdList[i].className='brick-item';
+             }
+         }
+    })
+}
+
+    </script>
+</body>
+</html>

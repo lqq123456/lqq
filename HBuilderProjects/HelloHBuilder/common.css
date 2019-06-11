@@ -1,0 +1,102 @@
+.header {
+	width: 100%;
+	height: 170px;
+}
+.header .tape {
+	height: 28px;
+	border-top: 1px solid #f5f5f5;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #fbfbfb;
+}
+.info {
+	width: 1140px;
+	margin: auto;
+	overflow: hidden;
+}
+.header .tape .info .left {
+	float:left;
+}
+.header .tape .info .right{
+	float:right;
+}
+.header .info .logo {
+	width: 440px;
+	height: 88px;
+	float: left;
+}
+.header .info .search {
+	float:right;
+	height: 88px;
+	margin-right: 100px;
+	margin-top: 10px;
+}
+.header .info .search input {
+	width: 250px;
+	height: 26px;
+	border: 2px solid coral;
+	margin: 18px 0;
+}
+.header .info .search button {
+	width: 45px;
+	height:31px;
+	background-color: coral;
+	border: none; 
+	color:white;
+	margin-left: -50px;
+	margin-top: 10px;
+}
+.header .menu {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+.header .menu ul li {
+	float: left;
+	line-height: 50px;
+	padding: 0 40px;
+}
+.header .menu ul li a {
+	font-size: 1.1em;
+	color: #fff;
+}
+
+.header .menu ul li:hover {
+	background-color: coral;
+	cursor: pointer;
+}
+.footer .top {
+	width: 100%;
+	height: 40px;
+	background-color: #3e3e3e;
+	margin: auto;
+}
+.footer .top ul {
+	width: 1140px;
+	margin: auto;
+}
+
+.footer .top li {
+	float:left;
+}
+.footer .top li a {
+	height: 100%;
+	padding: 0 20px;
+	color:#fff;
+	text-align: center;
+	line-height: 40px;
+}
+.footer .top ul li:hover {
+	background-color: coral;
+	cursor: pointer;
+}
+.footer .bottom {
+	width: 100%;
+	height: 92px;
+	background-color: black;
+	text-align: center;
+
+}
+.footer .bottom p {
+	color: #fff;
+	line-height: 92px;
+}

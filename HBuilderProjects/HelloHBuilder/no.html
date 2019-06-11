@@ -1,0 +1,3713 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米闪购-小米商城</title>
+    <link rel="shortcut icon" href="https://s01.mifile.cn/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <style type="text/css">
+    	body,ul,li{
+    padding:0px;
+    margin:0px;
+}
+body{
+    height: 2500px;
+}
+i,em{
+    font-style: normal;
+}
+
+ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+.topbar{
+    border:1px solid black;
+    height:40px; 
+    background-color: #333;
+}
+.topbar a{
+    font-size: 12px;
+    color:#b0b0b0;  
+}
+.topbar a:hover{
+    color:#fff;
+}
+.container{
+    margin:0 auto;
+    width:1226px;   
+   
+    
+}
+.container::before,.container::after,.clearfix::before,
+.clearfix::after{
+    content: " ";
+    display: table;
+}
+.container::after,.clearfix::after{
+    clear: both;
+}
+.topbar-nav{
+   float: left;
+   height:40px;
+   line-height:40px;
+   font-size: 0;
+}
+.topbar-nav span{
+    font-size: 12px;
+    color:#424242;
+    font-family: sans-serif;
+    margin: 0.5em;
+
+}
+.topbar-info,.topbar-cart{
+    float:right;
+   
+}
+.topbar-info{
+    font-size: 0;
+    margin-left: 15px;
+}
+.topbar-info a{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+}
+.topbar-info span{
+    font-size: 12px;
+    color:#424242;
+    font-family: sans-serif;
+    margin: 0.5em;   
+}
+.topbar-cart a{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    width: 120px;
+    background-color:#424242;
+    text-align: center;
+}
+.topbar-cart i{
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 4px;
+    vertical-align: -4px;
+}
+.topbar-cart a:hover{
+    background-color: #fff;
+    color: #ff6700;
+
+}
+.topbar-cart span{
+    font-size: 12px;
+}
+.sep{
+padding: 0 10px;
+}
+.header{
+    height: 100px;
+    position: relative;
+}
+.header-log{
+    float:left;
+    width:62px;
+    margin-top:22px;
+    height: 55px;
+    
+}
+.header-log a{
+    display: inline-block;
+    width:55px;
+    height:55px;
+    background: #ff6700 url('https://s01.mifile.cn/i/mi-logo.png') no-repeat 50%
+}
+.header-log .lr{
+  text-align: left;
+  text-indent:-9999em;
+}
+.header-nav{
+    float: right;
+    width:820px;
+    height:100px;
+    
+}
+.header-nav .nav-list{
+    width:820px;
+    height:88px;
+    font-size: 16px;
+    padding: 12px 0 0 0;
+
+}
+.header-nav .nav-list .nav-item{
+    float: left;
+   
+}
+
+.nav-item .item-children{
+   
+    height:230px;
+    position: absolute;
+    width:100%;
+    z-index:9999;
+    left: 0px;
+    background: #fff;
+   
+}
+.nav-item .none{
+    display: none;
+}
+.item-children ul{
+    padding: 0 0 0 40px;
+}
+.item-children ul .new{
+   float: left;
+   height:230px;
+    width: 15%;
+  
+    margin-left:10px;
+    font-size: 14px;
+    color: #333;
+    padding:42px 0;
+    position: relative;
+}
+.item-children ul .new::after{
+    content: '';
+    display: block;
+    height:100px;
+    width: 1px;
+    background: #e7e7e7;
+    position: absolute;
+    right: 10px;
+   top:40px;
+}
+.item-children ul .first{
+    margin-left:20px;
+}
+.new .new-figure a{
+     display: block;
+     width: 160px;
+     height: 110px;
+   
+}
+.new .new-figure img{
+    display:block;
+    width:100%;
+    height: 100%;
+    
+}
+.new .new-title a{
+    display: block;
+    color: #333;
+    text-align: center;
+    margin-left:-20px;
+    margin-top:10px;
+
+}
+.new .new-price{
+    text-align: center;
+    color:#ff6700;
+    margin-left:-20px;
+    margin-top:2px;
+}
+.new .new-flag{
+ position: absolute;
+ top:0;
+display: block;
+border: 1px solid #ff6700;
+width:50px;
+padding:2px 8px;
+text-align: center; 
+margin-left:44px;
+color: #ff6700; 
+ 
+
+}
+.nav-item .tag{
+display:inline-block;
+padding:26px 10px 38px;
+color: #333;
+}
+.nav-item .tag:hover{
+    color: #ff6700; 
+}
+
+.header-search{
+    float:right;
+    width:296px;
+    height:50px;
+    border:1px solid black;
+    margin-top:25px;
+}
+.header-search .search-form{
+    display: block;
+    width: 296px;
+    height: 50px;
+    position: relative;
+}
+.header-search .search-form .search-hot-words{
+    position: absolute;
+    top:14px;
+    right:65px;
+    z-index:2;
+    text-align: right;
+}
+.search-hot-words a{
+    display:inline-block;
+    padding:0 5px;
+    margin-left:5px;
+    font-size: 12px;
+    color: #757575;
+    background: #eee; 
+}
+.header-search .search-form .search-text{
+    position: absolute;
+    top:0;
+    right:51px;
+    display:block;
+    width:245px;
+    height:50px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+}
+.header-search .search-form .search-btn{
+    position: absolute;
+    top:0;
+    right:0;
+    display: block;
+    width:52px;
+    height:50px;
+    border: 1px solid #e0e0e0;
+    outline: 0;  /*去掉input点击时的蓝框*/
+    font-size: 24px;
+    line-height: 24px;
+    background-color: #fff;
+    color:#616161;
+}
+.header-search .search-form .search-btn:hover{
+    cursor: pointer;
+    background-color:#ff6700;
+}
+.seckill{
+    background-color: #f5f5f5;
+}
+.seckill .seckill-header{
+    height: 120px;
+    margin-top:19px;
+    border:1px solid black;
+    font-size: 24px;
+    padding:20px 0;
+    line-height:60px; 
+    text-align: center;
+}
+.seckill-nav ul{
+height:68px;
+background: #414141;
+border:1px solid black;
+}
+.seckill-nav li{
+display: block;
+float: left; 
+color:#fff;
+width:20%;
+height:68px;
+line-height: 68px;
+text-align: center;
+cursor: pointer;
+}
+.seckill-nav{
+    margin: -68px 0 22px;
+}
+.active{
+    background: #ff6700;
+}
+.seckill-nav ul li em{
+    display: inline-block;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: middle;
+     
+}
+.seckill-nav ul li span{
+    display: inline-block;
+    font-style: normal;
+    text-align: left;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-left:18px;
+}
+.seckill-nav ul li span em{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 0;
+    font-style: normal;
+    text-align: left;
+    line-height: 20px;
+}
+.seckill-goods .selected{
+  display: grid;
+}
+.seckill-goods ul{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    display: none;
+}
+.seckill-goods li{
+    height:360px;
+    background-color: #fff;
+    padding-top:14px; 
+    
+}
+.seckill-goods .bg{
+    height:230px;
+}
+/*img为行内元素，必须变成块内元素才能使用某些css特性*/
+.seckill-goods .bg img{
+    display:block; 
+    height:230px;
+    margin: auto;
+    width: 80%;
+    
+ }
+.seckill-goods .info{
+    height:160px;   
+}
+.seckill-goods .info .info-name{
+     width:80%;
+     margin:auto;
+     
+}
+.seckill-goods .info .info-name .font-title{
+    font-size:14px;
+    color: #333;
+    overflow: hidden;
+    font-weight:400;
+    margin:20px 0;
+    text-align:center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.seckill-notice{
+    font-size: 12px;
+    margin: 20px 0;
+    color:#999;    
+    text-align: left;
+    line-height: 20px;
+    margin-top:60px;
+    padding-bottom:20px;
+    letter-spacing:1px;
+    height:63px;
+}
+.seckill-goods .info .info-txt{
+ 
+    display:grid;
+    grid-template-columns:3fr 1.6fr;
+    grid-template-rows:1fr;
+    height:62px;
+    
+}
+.seckill-goods .info .info-txt .txt-price{
+    
+    line-height: 1.1;
+    padding-top:6px; 
+}
+.info-txt .txt-price .txt-price-now{
+    font-size: 20px;
+    color: #ff6700;
+    font-family: arial;
+    margin-right: 2px;
+    line-height: 1;
+    display: inline-block;
+    min-width: 50px;
+    padding-left:10px; 
+}
+.txt-price .txt-price-pre{
+color:#b0b0b0;
+font-size: 14px;
+display: inline-block;
+}
+.txt-price .txt-progess{
+    display:block;
+    padding:10px 10px;
+    
+}
+.txt-price .txt-progess .txt-progess-text{
+  margin-right:10px;
+}
+.info-txt .txt-btn{
+    background: #ff6700; 
+    display:block;
+    width:100%;
+    height:62px;
+    line-height: 62px;
+    text-align: center;
+    padding-top:6px; 
+    color:#fff;
+}
+.home-hero-slider{
+   
+    width: 100%;
+    height:460px;
+    position: relative;
+}
+.slider .pager-item{
+    position: absolute;
+    display: none;
+}
+.slider .selec{
+    display: block;
+}
+.slider .pager-item a{
+    display: block;
+}
+.slider .pager-item a img{
+    width: 1226px;
+    height: 460px;
+}
+.slider-control{
+    position: absolute;
+    
+    bottom: 20px;
+    right: 30px;
+    height:20px;
+    
+}
+.slider-control .control-item{
+    display: inline-block;
+    height: 20px;
+    line-height:20px;
+    padding-top:5px;
+}
+.slider-control .control-item a{
+    display:block;
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    border-color:rgba(255,255,255,0.3);
+    border-radius: 10px;
+    text-indent: -9999px;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    z-index:20;
+}
+.slider-control .control-item a:hover,.slider-control .control-item .selected-item{
+    background: rgba(255,255,255,0.4);
+    border-color: #757575;
+}
+.home-hero-slider .slider-direction a{
+position: absolute; 
+top: 50%;
+z-index:20;
+width: 41px;
+height: 69px;
+text-indent: -9999px;
+}
+.slider-direction .prev{
+    left: 234px;
+    background: url(../img/icon-slides.png) no-repeat -84px 50%;
+}
+.slider-direction .next{
+    right: 0;
+    background: url(../img/icon-slides.png) no-repeat -125px 50%;
+}
+.slider-menu{
+    width: 234px;
+    height: 460px;
+    position: absolute;
+}
+.slider-menu .category{
+    height: 420px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px 0;
+}
+
+.slider-menu ul .category-item a{
+    color: #fff;
+    display: block;
+    height: 42px;
+    line-height:42px;
+    padding-left:30px;
+    font-size: 14px;
+    position: relative;
+}
+
+.category-item a i::after{
+    position: absolute;
+    top:16px;
+    right: 20px;
+    content:'';
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    border-color: #ababab;
+     transform: rotateZ(45deg);
+
+}
+
+.category-item-active{
+    background: #ff6700;
+}
+
+.category-item .children{   
+    width:200px;
+    position: absolute;
+    top:0px;
+    left:234px;
+    height: 458px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    z-index:25;
+    display: none;
+    
+}
+.category-item .children-col4{
+    width:992px;
+  
+    
+}
+.category-item .children-col4 ul{
+  width: 248px;
+ 
+  
+}
+.category-item .children-col3{
+    width:795px;
+    
+   
+   
+}
+.category-item .children-col3 ul{
+    width: 265px;
+}
+.category-item .children-col2{
+    width: 530px;
+   
+}
+.category-item .children-col2 ul{
+    width: 265px;
+}
+.children ul li{
+    height: 76px;
+    
+}
+.children ul li .link{
+    display: block;
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+}
+.children ul li .thumb{
+width:40px;
+height: 40px;
+vertical-align: middle;
+margin-right: 12px;
+}
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1555591126805'); /* IE9 */
+  src: url('iconfont.eot?t=1555591126805#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOUAAsAAAAAB7gAAANGAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDIIJ4ATYCJAMMCwgABCAFhG0HOBvABiMRNmsP0pL9IyE7abzMQUeobLvgS51KhtBp4k0Q4XvP/2yStge6gPULig8JgM25HtioCDWSO7/5J19INk4vTR/+uHf6W+eBzdfgXOYY55+6AOOAAhp7kRVIgt4yvOpSnd7JzRAgQEqyI+Wb6vXxYaC9BJDuQ6c2+DJ6TEOp4ENwKyYaZDIOPjVGnYdJwfflXV7xgcLR0IG1O1ZoT+mXL7fqwXYwzT0EwXhWQJwGGsgOGJCWlfbG6CieHU1Al5vmXBeDoMYKWRvwDanL/vBAISAutDgEQGaSUPASh58otmLhWW+kAXABPzAMGtwIVcfve6QXi5szFJKwhPrtvl7+5s2Gt241unGjweDr2YtsuiVZ4vXr9VnH3SrWoFGvkFRq3xoeN2Pw9Pih49dTs+RGhfCpW+n0kFLrTiWYMWf28oRjt6dfjbp+vWlo5swhs4Iwd/3Q2GSzJoHBc1aMWzVvyNyVY5fP7h6Ys2bcOhEaNnBLNk2deoCaP18NYNr581yJEjh4SL40TZ9dfp2mbSE1eufOMS+UQzgRx+cZixRqk3rgr5+lS3Oo7vsq0rq1VPlqD27dpgpHgjaRXXwkVqaMfBVXF3sfvWRa3bv/7C4XP3YjmyV9rjVFp0mVNq37tZ6x+f/ENjQjZBP/H9ziC6zF7cZo4djrhSkXvk71elHKRa9PRQp7NpdNHBW2TrHpNq0BsI/1Ip0a7H79UBf4ab+hXKdygVbR4j+gfEEDwO2Hk28GXrvfACsEHwrAgl8kAJYZQ0QN2mh8h2+lNG3wXgAXcyUXFuqOy8P+zgSQWAWfJMCg8EgBGh/pMYaQHRyC5AcXH6UgQDYqTQ8Sj75oxPiBrIxAIMTYBIoIh0AT4wLGEB6AQ0I+gEtMNARoKPEWDJJRjg63coJG0YP9w+B4Jdukt7D0jl2ajaRFAemNEocQlFmRT7W4oowxJH66SpWAhBdo0HY4zwxBeESnWa8a6jynqjdljpfNjXKCRtGD/cPgeCWvut4Kn79jl2YjDag6+xslDvVDmRUATCtfQahruSZ+ukqVgIQXaJAVZxZnCNXtRnSa9T2ioc5JJYLKs/mVy/OtAQLQVbUo0WJw+3GKiY/tjGi52QAAAA==') format('woff2'),
+  url('iconfont.woff?t=1555591126805') format('woff'),
+  url('iconfont.ttf?t=1555591126805') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1555591126805#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo:before {
+  content: "\e6b2";
+}
+
+.icon-cart1:before {
+  content: "\e600";
+}
+.nav-item.tag:hover {
+            	background-color: orange;
+                    
+            }
+            .nav-item:hover :last-child{
+            	display: block;
+            }
+.item-children none{
+	display: none;
+}
+  body{
+           background: #f5f5f5;
+        }
+        .page-main {
+           /* background: #f5f5f5;*/
+            padding-top: 22px;
+
+        }
+        .household {
+            position: relative;
+        }
+
+        .hd-title {
+            font-size: 22px;
+            font-weight: 200;
+            line-height: 58px;
+            color: #333;
+        }
+        .hd-tab {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 16px 0 0;
+
+            font-size: 16px;
+        }
+        .hd-tab .hd-tab-list {
+            padding: 4px 0 0;
+            font-size: 16px;
+        }
+
+        .hd-tab .hd-tab-list li {
+            float: left;
+            margin-left: 30px;
+            color: #424242;
+            cursor: pointer;
+        }
+
+        .hd-tab .hd-tab-list li:hover {
+            color: #ff6700;
+            border-bottom: 2px solid #ff6700;
+        }
+
+        .hd-tab .hd-tab-list .tab-active {
+            color: #ff6700;
+            border-bottom: 2px solid #ff6700;
+        }
+
+        .house-bd .row4 {
+            float: left;
+        }
+
+        .house-bd .row4 ul {
+            height: 614px;
+        }
+
+        .house-bd .row4 ul .brick {
+            width: 234px;
+            margin-bottom: 14px;
+        }
+
+        .house-bd .item-right img {
+            display: block;
+            width: 234px;
+            height: 300px;
+        }
+
+        .row16 {
+            width: 978px;
+
+            float: left;
+            height: 614px;
+            margin-left: 12px;
+
+        }
+
+        .row16 .brick-item {
+            display: none;
+        }
+
+        .row16 .sel {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 14px;
+            grid-row-gap: 14px;
+        }
+
+        .row16 .brick-item .li {
+            padding: 34px 0 20px;
+            background: #fff;
+            position: relative;
+        }
+
+        .brick-item .li .figure {
+            text-align: center;
+        }
+
+        .row16 .brick-item .li .figure img {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 18px;
+        }
+
+        .brick-item .li .tit {
+            margin: 0 10px;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .brick-item .li .tit a {
+            color: #333;
+
+        }
+
+        .brick-item .li .pri {
+            margin-top: 25px;
+            text-align: center;
+            color: #ff6700;
+
+            font-size: 13px;
+        }
+
+        .brick-item .li .pri del {
+            color: #b0b0b0;
+        }
+
+        .brick-item .li .flag {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            width: 64px;
+            height: 20px;
+            margin-left: -32px;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+            background-color: #e53935;
+        }
+
+        .brick-item .li .review-wrap {
+            position: absolute;
+            display: none;
+        }
+
+        .brick-item .li .review-wrap .review {
+            margin-bottom: 5px;
+            color: #fff;
+
+            font-size: 12px;
+            background: #ff6700;
+
+        }
+
+
+    </style>
+</head>
+	<body>
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-nav">
+                <a href="">小米商城</a><span>|</span>
+                <a href="">MIUI</a><span>|</span>
+                <a href="">IoT</a><span>|</span>
+                <a href="">云服务</a><span>|</span>
+                <a href="">金融</a><span>|</span>
+                <a href="">有品</a><span>|</span>
+                <a href="">小爱开放平台</a><span>|</span>
+                <a href="">政企服务</a><span>|</span>
+                <a href="">资质证照</a><span>|</span>
+                <a href="">协议规则</a><span>|</span>
+                <a href="">下载app</a><span>|</span>
+                <a href="">Select Region</a><span>|</span>
+            </div>
+            <div class="topbar-cart">
+                <a><i class="iconfont icon-cart1"></i>购物车<span>(0)<span></span></span></a>
+            </div>
+            <div class="topbar-info">
+                <a href="">登录</a><span>|</span>
+                <a href="">注册</a><span>|</span>
+                <a href="" class="sep">消息通知</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div class="header-log">
+                <a href="" class="lr">小米官网</a>
+            </div>
+            <div class="header-search">
+                <form class="search-form">
+                    <div class="search-hot-words">
+                        <a href="">小米9</a>
+                        <a href="">小米9 SE</a>
+                    </div>
+                    <input type="search" class="search-text">
+                    <input type="submit" class="search-btn iconfont" value="">
+                </form>
+            </div>
+            <div class="header-nav">
+                <ul class="nav-list clearfix">
+                    <li class="nav-item">
+                        <a class="tag" href="">小米手机</a>
+                        <div class="item-children none">
+                            <ul>
+                                <li class="new first">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/mi9.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米9</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/mi9.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米9SE</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/qingchun.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米9</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/mi9.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米9</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/mi9.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">青春</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/mi9.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">青春</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        小米9
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="tag">红米</a>
+                        <div class="item-children none">
+                            <ul>
+                                <li class="new first">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/redmi.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">红米</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/redmi.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">红米</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/qingchun.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">青春</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/mi9.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">青春</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/mi9.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">青春</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="" class="tag">电视</a>
+                        <div class="item-children none">
+                            <ul>
+                                <li class="new first">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/v1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米壁画电视 65英寸</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/v2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米全面屏电视E55A</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/v1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米全面屏电视E55A</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/v2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米全面屏电视E55A</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/v1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米全面屏电视E55A</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/v1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米全面屏电视E55A</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="tag">笔记本</a>
+                        <div class="item-children none">
+                            <ul>
+                                <li class="new first">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/computer1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米笔记本 Air 12.5</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/computer2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米笔记本 Air 12.5</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/computer1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米笔记本 Air 12.5</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/computer2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米笔记本 Air 12.5</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/computer2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米笔记本 Air 12.5</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                                <li class="new">
+                                    <div class="new-figure">
+                                        <a href="#">
+                                            <img src="./img/new/v1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="new-title">
+                                        <a href="#">小米全面屏电视E55A</a>
+                                    </div>
+                                    <div class="new-price">1999</div>
+                                    <div class="new-flag">
+                                        新品
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="tag">家电</a>
+                        <div class="item-children none">
+                                <ul>
+                                    <li class="new first">
+                                        <div class="new-figure">
+                                            <a href="#">
+                                                <img src="./img/new/device.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="new-title">
+                                            <a href="#">小米笔记本 Air 12.5</a>
+                                        </div>
+                                        <div class="new-price">1999</div>
+                                        <div class="new-flag">
+                                            新品
+                                        </div>
+                                    </li>
+                                    <li class="new">
+                                        <div class="new-figure">
+                                            <a href="#">
+                                                <img src="./img/new/device.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="new-title">
+                                            <a href="#">小米笔记本 Air 12.5</a>
+                                        </div>
+                                        <div class="new-price">1999</div>
+                                        <div class="new-flag">
+                                            新品
+                                        </div>
+                                    </li>
+                                    <li class="new">
+                                        <div class="new-figure">
+                                            <a href="#">
+                                                <img src="./img/new/device.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="new-title">
+                                            <a href="#">小米笔记本 Air 12.5</a>
+                                        </div>
+                                        <div class="new-price">1999</div>
+                                        <div class="new-flag">
+                                            新品
+                                        </div>
+                                    </li>
+                                    <li class="new">
+                                        <div class="new-figure">
+                                            <a href="#">
+                                                <img src="./img/new/device.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="new-title">
+                                            <a href="#">小米笔记本 Air 12.5</a>
+                                        </div>
+                                        <div class="new-price">1999</div>
+                                        <div class="new-flag">
+                                            新品
+                                        </div>
+                                    </li>
+                                    <li class="new">
+                                        <div class="new-figure">
+                                            <a href="#">
+                                                <img src="./img/new/device.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="new-title">
+                                            <a href="#">小米笔记本 Air 12.5</a>
+                                        </div>
+                                        <div class="new-price">1999</div>
+                                        <div class="new-flag">
+                                            新品
+                                        </div>
+                                    </li>
+                                    <li class="new">
+                                        <div class="new-figure">
+                                            <a href="#">
+                                                <img src="./img/new/device.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="new-title">
+                                            <a href="#">小米全面屏电视E55A</a>
+                                        </div>
+                                        <div class="new-price">1999</div>
+                                        <div class="new-flag">
+                                            新品
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="nav-item"><a href="" class="tag">新品</a></li>
+                    <li class="nav-item"><a href="" class="tag">路由器</a></li>
+                    <li class="nav-item"><a href="" class="tag">智能硬件</a></li>
+                    <li class="nav-item"><a href="" class="tag">服务</a></li>
+                    <li class="nav-item"><a href="" class="tag">社区</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div>
+        <div class="home-hero-container">
+            <div class="container">
+                <div class="home-hero-slider">
+                    <div class="slider">
+                        <div class="pager-item selec" id="0">
+                            <a href="">
+                                <img src="./img/slide1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pager-item" id="1">
+                            <a href="">
+                                <img src="./img/slide2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pager-item" id="2">
+                            <a href="">
+                                <img src="./img/slide3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pager-item" id="3">
+                            <a href="">
+                                <img src="./img/slide4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pager-item" id="4">
+                            <a href="">
+                                <img src="./img/slide5.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="slider-control" id="btn">
+                        <li class="control-item"><a id="0" href="#" class="selected-item">1</a></li>
+                        <li class="control-item"><a id="1" href="#">2</a></li>
+                        <li class="control-item"><a id="2" href="#">3</a></li>
+                        <li class="control-item"><a id="3" href="#">4</a></li>
+                        <li class="control-item"><a id="4" href="#">5</a></li>
+                    </ul>
+                    <div class="slider-direction">
+                        <a href="#" class="prev">上一张</a>
+                        <a href="#" class="next">下一张</a>
+                    </div>
+                    <div class="slider-menu">
+                        <ul class="category">
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    手机 电话卡
+                                    <i class=""></i>
+                                </a>
+                                <div class="children children-col4" >
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call1.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call2.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call3.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call4.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call5.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/item6.png" alt="">
+                                                <span class="text">小米9</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call1.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call2.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call3.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call4.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call5.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/item6.png" alt="">
+                                                <span class="text">小米9</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call1.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call2.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call3.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call4.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call5.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/item6.png" alt="">
+                                                <span class="text">小米9</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call1.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call2.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call3.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call4.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/call5.png" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/item6.png" alt="">
+                                                <span class="text">小米9</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    电视 盒子
+                                    <i class=""></i>
+                                </a>
+                                <div class="children children-col3" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook2.jpg" alt="">
+                                                <span>接线头</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook2.jpg" alt="">
+                                                <span>解线头</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook2.jpg" alt="">
+                                                <span>接线头</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook2.jpg" alt="">
+                                                <span>解线头</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook1.jpg" alt="">
+                                                <span>小米9</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook2.jpg" alt="">
+                                                <span>接线头</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/notebook2.jpg" alt="">
+                                                <span>解线头</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    笔记本 平板
+                                    <i class=""></i>
+                                </a>
+                                <div class="children  children-col2" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    家电 插线板
+                                    <i class=""></i>
+                                </a>
+                                <div class="children  children-col2" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    出行 穿戴
+                                    <i class=""></i>
+                                </a>
+                                <div class="children  children-col2" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="title">
+                                    智能 路由器
+                                    <i class=""></i>
+                                </a>
+                                <div class="children  children-col2" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    电源 配件
+                                    <i class=""></i>
+                                </a>
+                                <div class="children  children-col2" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    健康 儿童
+                                    <i class=""></i>
+                                </a>
+                                <div class="children  children-col4" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    耳机 音响
+                                    <i class=""></i>
+                                </a>
+                                <div class="children  children-col2" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="title">
+                                    生活 箱包
+                                    <i class=""></i>
+                                </a>
+                                <div class="children  children-col3" style="display: none;">
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="children-list-col">
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv2.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv3.png" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link">
+                                                <img class="thumb" src="./img/tv1.jpg" alt="">
+                                                <span>笔记本</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+    <div class='page-main'>
+        <div class='container box'>
+            <div class='household'>
+                <div class='house-hd'>
+                    <h2 class='hd-title'>家电</h2>
+                    <div class="hd-tab">
+                        <ul class='hd-tab-list clearfix' id='hd-tab'>
+                            <li class='tab-active'>热门</li>
+                            <li>电视影音</li>
+                            <li>电脑</li>
+                            <li>家居</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='house-bd'>
+                    <div class="row4">
+                        <ul>
+                            <li class='brick'>
+                                <a href="#" class='item-right'>
+                                    <img src="./img/main/house1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class='brick'>
+                                <a href='#' class='item-right'>
+                                    <img src="./img/main/house2.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='row16' id='row16'>
+                        <ul class="brick-item sel">
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brick-item ">
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item2.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item2.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item2.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item2.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item2.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item2.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item2.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item2.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brick-item ">
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item3.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item3.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item3.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item3.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item3.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item3.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item3.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item3.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brick-item ">
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item8.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item8.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item8.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item8.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item8.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item8.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item8.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class='li'>
+                                <div class='figure'>
+                                    <a href="#">
+                                        <img src="./img/item8.png" alt="">
+                                    </a>
+                                </div>
+                                <h3 class='tit'>
+                                    <a href="#">米家互联网洗烘一体机10kg</a>
+                                </h3>
+                                <div class='pri'>
+                                    <span>1999元</span>
+                                    <del>2199元</del>
+                                </div>
+                                <div class="flag">减200元</div>
+                                <div class="review-wrap">
+                                    <a href="">
+                                        <span class='review'>挺好的，洗的也干净，白色很简单，好看</span>
+                                        <span class='author'>来自于 白羊董小姐 的评价 </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      var hdTab=document.getElementById('hd-tab').getElementsByTagName('li');
+      console.log(hdTab);
+      var hdList=document.getElementById('row16').getElementsByTagName('ul');
+      console.log(hdList);
+      for(var i=0;i<hdTab.length;i++){
+        hdTab[i].addEventListener('mouseover',function(){
+         for(var i=0;i<hdTab.length;i++){
+             if(hdTab[i]===this){
+                hdTab[i].className='tab-active';
+                hdList[i].className='brick-item sel';
+             }
+             else{
+                hdTab[i].className='';
+                hdList[i].className='brick-item';
+             }
+         }
+    })
+}
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="home-hero-sub"></div>
+                <!--小米闪购-->
+                <div class="seckill">
+                    <div class="seckill-header">小米闪购</div>
+                    <div class="seckill-nav">
+                        <ul id="tabs" class="clearfix">
+                            <!--
+                         <em> 标签告诉浏览器把其中的文本表示为强调的内容
+                        -->
+                            <li class="active">
+                                <em>18:00</em>
+                                <span><em>即将开始<br>距开始 00:59:36</em></span>
+                            </li>
+                            <li>
+                                <em>20:00</em>
+                                <span>即将开始</span>
+                            </li>
+                            <li>
+                                <em>22:00</em>
+                                <span> 即将开始</span>
+                            </li>
+                            <li>
+                                <em>00:00</em>
+                                <span>明日开始</span>
+                            </li>
+                            <li>
+                                <em>08:00</em>
+                                <span>明日开始</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="lists" class="seckill-goods">
+                        <ul class="selected">
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="">
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item3.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item3.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="">
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item2.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item2.png" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="">
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item1.jpg" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item1.jpg" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="bg">
+                                    <a href=""><img src="./img/item1.jpg" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网洗烘一体机</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <img src="./img/item2.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家互联网立式空调C1</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>2999
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>3499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <img src="./img/item3.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">15.6"笔记本 i5 4G MX110</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>4199
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>5499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <img src="./img/item4.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title"> 13.3"小米笔记本Air 四核i7 8G 256G MX150 银色"</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>4199
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>5499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <img src="./img/item5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家电水壶</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>99
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>199</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <img src="./img/item6.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家空气净化器Pro</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>1499
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>2499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <img src="./img/item7.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家LED吸顶灯</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>399
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>499</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bg">
+                                    <img src="./img/item8.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="info-name">
+                                        <h4 class="font-title">米家飞利浦智睿台灯二代</h4>
+                                    </div>
+                                    <div class="info-txt">
+                                        <div class="txt-price">
+                                            <i class="txt-price-now">
+                                                <em>¥</em>199
+                                            </i>
+                                            <span class="txt-price-pre">
+                                                ¥<del>599</del>
+                                            </span>
+                                            <span class="txt-progess">
+                                                <i class="txt-progess-text">已售24%</i>
+                                                <i class="txt-progess-pict">
+                                                    <progress max="100" value="20" style="width:80px;"></progress>
+                                                </i>
+                                            </span>
+                                        </div>
+                                        <a href="" class="txt-btn">
+                                            立即抢购
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="seckill-notice">
+                        小米闪购活动规则:小米闪购商品不享受在小米商城的其他优惠。<br>
+                        温馨提示：应可能存在系统缓存，页面更新导致价格变动异常等不确定因素出现时，请即使联系客服。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery-3.3.1.js"></script>
+        <script src="./js/index2.js"></script>
+        <script src="js/index.js"> </script>
+
+
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
+
